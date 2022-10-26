@@ -17,9 +17,18 @@ class UI {
             <span class="badge badge-secondary">Public Gists: ${user.public_gists}</span>
             <span class="badge badge-success">Followers: ${user.followers}</span>
             <span class="badge badge-primary">Following: ${user.following}</span>
+            <br><br>
+            <ul class="list-group">
+              <li class="list-group-item">Company: ${user.company}</li>
+              <li class="list-group-item">Website: ${user.blog}</li>
+              <li class="list-group-item">Location: ${user.location}</li>
+              <li class="list-group-item">Member Since: ${user.created_at}</li>
+            </ul>
           </div>
         </div>
       </div>
+      <h3 class="page-heading mb-3">Latest Repos</h3>
+      <div id=""repos></div>
     `;
   }
 }
