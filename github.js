@@ -1,5 +1,5 @@
 // github class
-class GitHut {
+class GitHub {
   constructor() {
     //THIS SHOULD BE CHANGED TO AN ENV VARIABLE
     this.client_id = "955dd0b264c4762d96fb";
