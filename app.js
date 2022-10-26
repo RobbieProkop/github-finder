@@ -12,7 +12,7 @@ searchUser.addEventListener("keyup", (e) => {
   const userText = e.target.value;
 
   if (!userText) {
-    return;
+    return ui.clearProfile();
   }
   // Make HTTP call
   github.getUser(userText).then((data) => {
@@ -25,4 +25,5 @@ searchUser.addEventListener("keyup", (e) => {
   });
 
   //Clear Profile
+  ui.clearProfile();
 });
