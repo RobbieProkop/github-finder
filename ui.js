@@ -10,7 +10,9 @@ class UI {
         <div class="row">
           <div class="col-md-3">
             <img class="img-fluid mb-2" src="${user.avatar_url}">
-            <a href="${user.html_url}" target="_blank" class="btn btn-primary btn-block">View Profile</a>
+            <div class="d-grid">
+              <a href="${user.html_url}" target="_blank" class="btn btn-primary btn-lg mb-2 mt-2">View Profile</a>
+            </div>
           </div>
           <div class="col-md-9">
             <span class="badge badge-primary">Public Repos: ${user.public_repos}</span>
