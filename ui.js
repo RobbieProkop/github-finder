@@ -38,6 +38,7 @@ class UI {
   showRepos(repos) {
     let output = "";
     repos.forEach((repo) => {
+      console.log("repo", repo);
       output += `
         <div class="card card-body mb-2">
           <div class="row">
@@ -52,9 +53,12 @@ class UI {
           </div>
         </div>
       `;
+      console.log("output :>> ", output);
     });
+    console.log("output", output);
 
-    //out
+    //output repo
+    document.getElementById("repos").innerHTML = output;
   }
 
   //SHow alert for when user is not found
